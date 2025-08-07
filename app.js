@@ -38,10 +38,37 @@ const Header = () => {
     </div>
   );
 };
+
+const RestaurantCard = ({ name, rating, cuisine, deliveryTime }) => {
+  return (
+    <div className="res-card">
+      <h3>{"Sonali Foods"}</h3>
+      {/* <p>Rating: {rating}</p>
+      <p>Cuisine: {cuisine}</p>
+      <p>Delivery Time: {deliveryTime} mins</p> */}
+    </div>
+  );
+};
+
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search-bar">
+        <input type="text" placeholder="Search for restaurants..." />
+      </div>
+      <div className="restaurant-container">
+        {/* Restaurant Cards will go here */}
+        <RestaurantCard />
+      </div>
+    </div>
+  );
+};
+
 const AppLayout = () => {
   return (
     <div className="app">
       <Header />
+      <Body />
     </div>
   );
 };
