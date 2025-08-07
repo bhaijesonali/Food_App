@@ -1,3 +1,1 @@
-/node_modules
-/dist
-.parcel-cache
+git rm -r --cached node_modules dist .parcel-cache
